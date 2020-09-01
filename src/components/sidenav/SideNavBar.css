@@ -1,0 +1,243 @@
+.sidenav{
+  display: inline-block;
+  background-color: white;
+  width: 16%;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.filter{
+  margin-left: 5px;
+}
+
+.launch_year{
+ text-align: center;
+ margin: 0px;
+ padding: 0px;
+ margin-right: 2rem;
+}
+
+.horizontal_line{
+  border-bottom: 2px solid;
+  margin: 0px 34px;
+}
+
+.button{
+  display: flex;
+}
+
+.right_button{
+  display: inline-block;
+  margin-left: 32px;
+}
+
+.p-button{
+  display: block;
+  width: 60px;
+  background-color: green;
+  border-radius: 13%;
+  height: 26px;
+  margin-left: 10px;
+  text-align: center
+}
+
+.button-dark{
+  background-color: red;
+}
+
+.button-light{
+  display: block;
+  width: 60px;
+  background-color: #a3cb88;
+  border-radius: 13%;
+  height: 26px;
+  margin: 10px;
+  text-align: center;
+  border-width: 0px
+}
+
+.successful-launch{
+  text-align: center;
+  margin: 15px 0px 0px 0px;
+  padding: 0px;
+}
+
+.success-line{
+  border-bottom: 2px solid;
+  margin: 0px 30px;
+  width: 149px
+}
+
+.center_button {
+  text-align-last: center;
+}
+
+.blue_button {
+  padding: 12px;
+  border-radius: 4px;
+  margin: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.blue_button:disabled {
+  cursor: not-allowed;
+  background-color: lightblue;
+}
+
+.blue_button:visited {
+  background-color: red;
+}
+
+#launch-year, #success-launch, #success-land {
+  margin: 4px;
+
+  float: left;
+}
+
+#launch-year label, #success-launch label, #success-land label {
+  float: left;
+  width: 70px;
+  margin: 4px;
+  background-color: #a3cb88;
+  border-radius: 6px;
+  border: 1px solid #d0d0d0;
+  overflow: auto;
+}
+
+#launch-year label span, #success-launch label span, #success-land label span{
+  text-align: center;
+  padding: 8px 0px;
+  display: block;
+}
+
+#launch-year label input, #success-launch label input, #success-land label input {
+  left: -10000px;
+  position: absolute;
+  top: -10000px;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+#launch-year input:checked + span, #success-launch input:checked + span, #success-land input:checked + span {
+  background-color: #404040;
+  color: #f7f7f7;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .sidenav {
+    display: block;
+    background-color: white;
+    width: 79%;
+    margin-left: 50px;
+  }
+  .button{
+    text-align: center;
+  }
+  .left_button {
+    display: inline-block;
+    margin-left: 5rem;
+  }
+  .success-line{
+    margin-left: 8rem;
+    width: 9rem;
+    text-align: center;
+  }
+  .horizontal_line{
+    margin-left: 7rem;
+    width: 9rem;
+  }
+  .filter {
+    margin-left: 14px;
+    margin-bottom: auto;
+    padding-top: 10px;
+  }
+  .space-launch {
+    font-weight: 800;
+    padding-left: 50px;
+  }
+
+  #launch-year, #success-launch, #success-land {
+    width: 100px;
+  }
+}
+
+
+
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .sidenav {
+    display: inline-block;
+    background-color: white;
+    width: 30%;
+    margin-top: 10px;
+  }
+  .success-line, .horizontal_line{
+    margin: 0rem 3rem;
+    width: 8rem;
+  }
+  .button{
+    display: flex;
+  }
+  .right_button {
+    flex: 1;
+  }
+  .left_button {
+    flex: 1;
+  }
+  .launch_year {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+  .launch_year, .successful-launch {
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .sidenav {
+    display: inline-block;
+    background-color: white;
+    width: 21%;
+    
+  }
+  .horizontal_line{
+    margin: 0px 45px;
+  }  
+  .success-line {
+    margin: 0px 43px
+  } 
+  .button{
+    display: flex;
+  }
+  .right_button {
+    flex: 1;
+  }
+  .left_button {
+    flex: 1;
+  }
+ 
+}
+
+@media only screen and (min-width: 1135px) and (max-width: 1440px) {
+ 
+  .horizontal_line{
+    margin: 0px 69px;
+  } 
+  .button{
+    padding-left: 2rem;
+  }
+  .success-line {
+    margin: 0px 62px
+  } 
+  .left_button{
+    display: inline-block;
+    margin-left: 8px;
+  }
+}

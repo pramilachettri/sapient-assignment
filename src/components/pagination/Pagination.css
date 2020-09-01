@@ -1,0 +1,54 @@
+.pagination {
+  display: inline-block;
+  text-align: center;
+}
+
+.pagination > ul > li {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  background-color: #006080;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.pagination > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.invisible {
+  width: 1000px;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+  .invisible {
+    display: none;
+  }
+  .pagination {
+    margin-left: 2rem;
+  }
+  .pagination > ul {
+    padding-left: 44px;
+  }
+  .pagination > ul > li {
+    margin: 8px;
+    padding: 6px;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .invisible {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .invisible {
+    display: none;
+  }
+  .pagination {
+    margin-left: 9rem;
+  }
+}

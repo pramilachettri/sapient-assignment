@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+}
+
+.main-content{
+  background-color: rgb(207, 207, 198);
+  display: inline-block;
+  width: 100%;
+}
+
+.space-launch{
+  font-weight: 800;
+  margin-bottom: 50px;
+  padding-left: 36px;
+}
+
+.main-child-div {
+  width: 82%; 
+  display: inline-block;
+  background-color: rgb(207, 207, 198); 
+  margin-left: 10px;
+}
+
+.align-developer {
+  text-align: center;
+}
+
+.Ok-modal {
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.close-modal {
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.ReactModal__Content--after-open {
+  top: 200px !important;
+  left: 500px !important;
+  right: 500px !important;
+  bottom: 200px !important;   
+}
+
+.button-dark{
+  background-color: red !important;
+}
+
+ 
+@media only screen and (max-width: 700px) {
+  .ReactModal__Content--after-open {
+    top: 160px !important;
+    left: 130px !important;
+    right: 80px !important;
+    bottom: 80px !important; 
+    width: 300px;  
+    height: 232px;  
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .main-child-div {
+    width: 68%; 
+    margin-left: 0px;
+  }
+  .ReactModal__Content--after-open {
+    top: 200px !important;
+    left: 360px !important;
+    right: 80px !important;
+    bottom: 80px !important; 
+    width: 300px;  
+    height: 232px;  
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .main-child-div {
+    width: 75%; 
+    margin-left: 16px;
+  }
+  .main-child-div{
+    margin-left: -2rem;
+    
+  }
+  .ReactModal__Content--after-open {
+    top: 180px !important;
+    left: 460px !important;
+    right: 80px !important;
+    bottom: 80px !important; 
+    width: 340px;  
+    height: 232px;  
+  }
+}
+
+
+
